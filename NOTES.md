@@ -140,3 +140,98 @@
 - for example, "Bluebunch wheatgrass", "stem-energy"
 - the brightness of a circle's colour represents the relative value of a field
 
+
+
+# raw thoughts
+
+I e-mailed these to myself in the middle of the night.  They are rough,
+incomplete, with errors, but here they are.
+
+These thoughts are what directly drove the stuff commited here so far.
+
+
+Don't try to build the game first, build the simulation first.
+
+Build the minimum sim that is interesting.
+
+Both city and country.
+
+Research such open simulations.
+
+
+Simulation at a low level as a basis for a high level simulation both of playable. 
+
+
+Each location, outside, is 10m^2 and indoor is 1m^2
+
+Each location has eight standard exits. N, nw, etc but perhaps named differently
+
+Each has an election which provides for slope/difficult terrain across exits.
+
+Grass Ina room is a lifeform ... Weeds would be another lifeform. On a cycle they consume each other as mobile life forms do.
+
+We can look at adjacent rooms for information about what a life form will do for a given tick.
+
+Rabbits eat grass.
+
+Animals have a hunger number that when it stays high adds to the fat reserve, and when low reduces fat reserve.
+
+Come up with a name for fat reserve that encapsulates plants.
+
+Each zone is 1km^2 and locations within are given temperature and moisture based on this zone
+
+Visibility in a location is kind of a fog, just lowers what things can detetect as it geta higher.
+
+High grass for example lowers visibility.
+
+We don't have hitpoints.  A mouse can never kill a human, it can inflict scratches.  Which could get infected.
+
+A human will cause massive  internal crushing to a mouse which will cause it to bleed to death almost instantly.
+
+Future ML tools will, as a way to top down refactor for example legacy code vases, ingest the view/screen/browser of all of the users of the legacy app, and then make changes/refactor the underlying code.
+
+Grass takes energy from the sun in calories the same way that rabbits take energy from the grass the same way that foxes take energy from rabbits.
+
+The transfer mechanism differs, as does the quanta.  A rabbit only gives energy only after it dies.  Grass gives energy to rabbits as a room total.  So a rabbit eating grass reduces the amount of grass, in small quanta.
+
+The sun gives energy to grass in small quanta, variable based on the weather.
+
+Energy rather than the previously mentioned fat reserves.
+
+A rabbit has X energy and must have Y energy available to live, up to a max of Z energy. 
+
+Z energy is the biggest, plumpest rabbit.
+X energy is a rabbit that just died of starvation, which happened when Y energy fell to X.
+
+A Z energy rabbit will be obese and slow, the fox gets the most energy from this.
+
+As a body is eaten it's energy goes down.  When energy, in kcalories, reaches 0, the body is gone, but perhaps not deallocated.  It might turn into some hair and bones and blood that fade over time.
+
+How to make weeds and grass compete when they are location wide life forms
+
+Complicated. In real life there are root systems and all sorts of other mostly invisible complications.
+
+Make a web page that shows a 2x2 grid of adjacent independently colored circles in a horizontally and vertically acrollable view where each circle has color ranges based on a selected view, for instance grass energy.  This would start with 100x100 circles/locations.
+
+Perhaps let each circle, by half, show a different selected view, for example grass and weeds.
+
+The underlying data would be more useful for analysis if historical versions were available.
+
+Need to think about how location wide life forms spread between locations.
+
+For plant competition, each type, say thistles, would have a maximum energy absorption.  That is, as light falls on the location, it's energy is given by percentage chunk to all of the plants there.
+
+Thistles that have taken over a local meeting that gave qq max energy collection percentage of 70%, always leaving room for grass to creep in.  Grass can collect energy in wider temp/environment condition than thistles.  When it is warm and wet thistles will get big and slow grass energy growth.  Be cool thistles will die and grass grows more.
+
+Energy of all of the plants in a location does not have a firm max.  There can be heavy grass and heavy thistles, or both can be light.  This amount of energy for a plant informs the text generates for players....how dense and green a location is 
+
+Root energy and stem energy are separate.
+
+Thistles can have big root and but stem energy...but when it cools the stem energy goes down fast until there is no stem.  But it's roots retain potentially high energy, but they can gather no more until after it warms up and they send some root energy to stems, which will then start collecting sun energy.  Stems collecting sun energy keep a percentage for the stem and send the rest to the roots.
+
+Grass has mostly stem energy but it doesn't lose very much when it is cool or cold.  But it gathers some but little sun energy when cold.
+
+When plants and animals die and rots the ground gets most or all of their energy.  This causes the ground to be more rich and depending on the plant help them grow better.
+
+
+
