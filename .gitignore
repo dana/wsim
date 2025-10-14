@@ -1,1 +1,19 @@
-*.sw?
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-selfcheck.json
+
+# Tox
+.tox/
+
+# Pytest
+.pytest_cache/
+
+# IDEs
+.idea/
+.vscode/

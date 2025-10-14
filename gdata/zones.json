@@ -1,0 +1,5 @@
+{
+    "z1": {
+        "comments": "this requires some additional thought. what initially comes to mind is a bunch of parameters that kind of simulates weather patterns. Instead of that, perhaps find a historical data source for temp/rain/snow in a given real location and reference that data source here, so we can, hour by hour, plug that real-life data in."
+    }
+}

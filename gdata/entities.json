@@ -1,0 +1,27 @@
+{
+    "e1": {
+        "name": "Eastern Cottontail",
+        "type": "animal",
+        "energy": 4000
+    },
+    "e2": {
+        "name": "Bluebunch wheatgrass",
+        "type": "plant",
+        "stem-energy": 312500,
+        "root-energy": 156250,
+        "comments": "above energy is based on 3125 kcal/kg of wheatgrass, one kilo per m^2, 100 m^2 in an outside location. Also we're going for root energy as half of the stem energy."
+    },
+    "e3": {
+        "name": "Canada thistle",
+        "type": "plant",
+        "stem-energy": 312500,
+        "root-energy": 156250,
+        "comments": "Most of their energy is in their roots."
+    },
+    "e4": {
+        "name": "loam",
+        "type": "ground",
+        "energy": 10240,
+        "comments": "energy for ground represents a kind of fertility. when things rot in this location, some/all of their energy goes into the ground. plants get most of their energy from the sun, but they do extract a bit from the ground."
+    }
+}
