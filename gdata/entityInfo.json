@@ -1,0 +1,17 @@
+{
+    "Eastern Cottontail": {
+        "default-energy": 4000,
+        "minimum-energy": 2000,
+        "maximum-energy": 8000
+    },
+    "Bluebunch wheatgrass": {
+        "default-stem-energy": 1000,
+        "default-root-energy": 2000,
+        "maximum-stem-energy": 625000,
+        "maximum-root-energy": 312500,
+        "minimum-temp": -10,
+        "maximum-temp": 40,
+        "growth-rate": 1.002,
+        "comments": "for plants, the default root energy starts low, and default stem energy starts very low. Maximum energy for a location? Let's go with 2kg per m^2 for stem, half that for root energy. minimum-temp: at -10C or lower this plant starts to die. maximum-temp: at 40C or higher this plant starts to die. That is, this wheatgrass has a very broad temperature range. growth-rate: under ideal conditions, this plants energy is multiplied by 1.002 per hour of sunlight."
+    }
+}
