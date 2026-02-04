@@ -309,3 +309,24 @@ $ curl http://localhost:5000/wsim/v1/entities
 
 - start with JSON for data storage
 - switch to something more performant later
+
+
+# Misc Notes to save
+
+## Stuff about backend server/REST API
+
+* This web app only displays information that's (frequently) pulled from the
+  backend REST API. 
+* It is expected that the backend server, which exposts a REST endpoint, will
+  be making changes to the various attributes and entities each tick.
+* The backend server will run the simulation, either one tick at a time,
+  or continously, until stopped.
+* The web app should have controls which allow the user to start the backend
+  simulation, start the backend simulation, or, when it is stopped, cause
+  it to step forward one tick.
+* The web app needs to pull the current state of all of the cells and
+  entities, with any other necessary data, from the server on a frequent 
+  enough interval to be able to fully display all of the cells and entities
+  every tick.
+
+
